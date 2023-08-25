@@ -6,3 +6,14 @@ const ingredients = [
   'Herbs',
   'Condiments',
 ];
+
+
+const ingredientsList = document.querySelector('#ingredients');
+
+const liArray = ingredients.map(ingredient => {
+  const listElement = document.createElement("li");
+  listElement.textContent = ingredient;
+  return listElement;
+});
+
+ingredientsList.append(...liArray);
