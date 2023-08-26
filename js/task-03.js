@@ -15,7 +15,15 @@ const images = [
 
 const imagesList = document.querySelector('.gallery');
 
-const markup = images.map(image => `<li class="list-item"><img src="${image.url}" alt="${image.alt}" class="list-img"/><li/>`).join("");
+function createMarkup(array) {
+  const result = array.map((image) => {
+    return `<li><img src="${image.url}" alt="${image.alt}" class="list-img"/><li/>`
+  });
+  
+  return result.join("");
+}
+
+const markup = createMarkup(images);
 
 console.log(markup);
 

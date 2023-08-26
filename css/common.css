@@ -26,14 +26,12 @@ button {
 .gallery {
   list-style: none;
   display: flex;
-  gap: 15px;
+  flex-wrap: wrap;
+  row-gap: 48px;
+  column-gap: 24px;
 }
 
-.list-item {
-: ;
-}
 .list-img {
-  width: 300px;
-  height: 200px;
-  margin-bottom: 10px;
+  width: 500px;
+  height: 300px;
 }
